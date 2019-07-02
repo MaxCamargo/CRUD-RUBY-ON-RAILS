@@ -32,6 +32,15 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# make errors better lookings
+gem 'better_errors', '~> 2.5', '>= 2.5.1'
+
+#Bulma CSS
+gem 'bulma-rails', '~> 0.7.5'
+
+#simple form
+gem 'simple_form', '~> 4.1'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -43,6 +52,8 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+  # Guard is a command line tool to easily handle events on file system modifications.
+  gem 'guard', '~> 2.15'
 end
 
 group :test do
@@ -55,3 +66,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+'gem "bootsnap", require: false' 
